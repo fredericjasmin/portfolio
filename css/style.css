@@ -227,11 +227,17 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .aboutme_information {
+        width: 400px;
+    }
 }
 
 @media (max-width: 700px) {
     .contact {
         flex-direction: column;
         text-align: center;
+    }
+    .contact_information {
+        width: 400px;
     }
 }
