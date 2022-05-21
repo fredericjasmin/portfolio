@@ -136,6 +136,7 @@ body {
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
+
 .watch_button:hover {
     color: var(--color2);
     font-size: 21px;
@@ -152,6 +153,7 @@ body {
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
+
 .code_button:hover {
     color: var(--color3);
     font-size: 21px;
@@ -227,6 +229,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
     .aboutme_information {
         width: 400px;
     }
@@ -237,6 +240,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
     .contact_information {
         width: 400px;
     }
