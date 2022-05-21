@@ -26,7 +26,8 @@ body {
     text-align: center;
     font-size: 3rem;
     font-weight: 3rem;
-    margin: 100px;
+    margin-top: 200px;
+    margin-bottom: 30px;
 }
 
 /* NavBar Section */
@@ -55,7 +56,8 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .aboutme_information {
@@ -84,6 +86,7 @@ body {
 .skills {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .skills_cards {
@@ -94,6 +97,7 @@ body {
     text-align: center;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
     width: 200px;
+    margin-top: 15px;
 }
 
 .skills_cards img {
@@ -105,6 +109,7 @@ body {
 .projects {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .projects_cards {
@@ -116,24 +121,39 @@ body {
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
     padding: 10px;
     width: 350px;
+    margin-top: 15px;
 }
 
 .watch_button {
     background-color: var(--color4);
+    font-size: 20px;
     color: var(--color1);
     border-radius: 5px;
     text-decoration: none;
     padding: 5px;
+    font-weight: 600;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.watch_button:hover {
+    color: var(--color2);
+    font-size: 21px;
 }
 
 .code_button {
     background-color: var(--color2);
+    font-size: 20px;
     color: var(--color1);
     border-radius: 5px;
     text-decoration: none;
     padding: 5px;
+    font-weight: 600;
     box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+.code_button:hover {
+    color: var(--color3);
+    font-size: 21px;
 }
 
 /* Contact Section */
@@ -143,7 +163,8 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    height: 500px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .contact_information {
@@ -182,6 +203,7 @@ body {
 
 .contact_buttons a:hover {
     color: var(--color2);
+    font-size: 21px;
 }
 
 /* Footer Section */
@@ -195,4 +217,20 @@ body {
 .footer p {
     text-align: center;
     color: var(--color1);
+}
+
+/* Responsive*/
+
+@media (max-width: 850px) {
+    .aboutme {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
 }
