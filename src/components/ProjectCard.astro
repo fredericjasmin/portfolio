@@ -10,8 +10,10 @@ const {
 	heading,
 	subheading,
 	imagePath,
-	altText
+	altText,
+	target // Añadir 'target' aquí
 } = Astro.props
+
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
 if (!images[imagePath])
 	throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`)
@@ -24,9 +26,11 @@ if (!images[imagePath])
 		href && 'transition-all hover:border-foreground/25 hover:shadow-sm'
 	)}
 	href={href}
+	target={target} // Asegúrate de que se pase el 'target'
+	rel="noopener noreferrer" // Añadir por seguridad
 >
 	<Image
-		src={images[imagePath]()}
+		src={images[imagePath]() }
 		alt={altText}
 		class='h-48 w-full rounded-2xl rounded-bl-none rounded-br-none object-cover'
 		loading='eager'
