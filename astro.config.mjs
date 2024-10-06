@@ -39,5 +39,5 @@ export default defineConfig({
 		}
 	},
 	prefetch: true,
-	output: 'static' // Cambiado a 'static' para un build estático
+	output: 'static'
 })

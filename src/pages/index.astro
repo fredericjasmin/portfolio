@@ -21,13 +21,13 @@ const others = ["GitHub", "Postman", "Figma", "Notion"];
 			<Image
 				src={fredericjasmin}
 				alt="profile photo"
-				class="h-48 w-auto rounded-full bg-[black] p-1"
+				class="h-48 w-auto rounded-full bg-border p-1"
 				loading="eager"
 			/>
 
 			<div class="flex flex-col items-center gap-y-4">
 				<h1 class="text-3xl font-bold">Frederic Jasmin</h1>
-				<a
+				<!-- <a
 					href="https://github.com/srleom/astro-theme-resume.git"
 					class="flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md"
 				>
@@ -40,8 +40,8 @@ const others = ["GitHub", "Postman", "Figma", "Notion"];
 						></span>
 					</span>
 
-					<!-- <p class='font-medium'>Get resume</p> -->
-				</a>
+					<p class='font-medium'>Get resume</p>
+				</a> -->
 				<div class="flex flex-wrap justify-center gap-x-7 gap-y-3">
 					<Label title="Backend and Frontend">
 						<svg
@@ -228,7 +228,7 @@ const others = ["GitHub", "Postman", "Figma", "Notion"];
 			<SkillLayout title="Others" skills={others} />
 		</Section>
 	</div>
-	<a
+	<!-- <a
 		href="https://github.com/srleom/astro-theme-resume.git"
 		class="mt-16 flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md"
 	>
@@ -240,6 +240,6 @@ const others = ["GitHub", "Postman", "Figma", "Notion"];
 			></span>
 		</span>
 
-		<!-- <p class='font-medium'>Get resume</p> -->
-	</a>
+		<p class='font-medium'>Get resume</p>
+	</a> -->
 </PageLayout>
