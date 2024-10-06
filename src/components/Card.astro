@@ -12,6 +12,7 @@ const {
 	date,
 	imagePath,
 	altText,
+	target,
 	imageClass
 } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
@@ -29,6 +30,7 @@ if (imagePath) {
 		href && 'transition-all hover:border-foreground/25 hover:shadow-sm'
 	)}
 	href={href}
+	target={target}
 >
 	{
 		imagePath && (
