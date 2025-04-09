@@ -4,7 +4,7 @@ import type { AstroExpressiveCodeOptions } from 'astro-expressive-code'
 export const siteConfig: SiteConfig = {
 	author: 'Frederic Jasmin',
 	title: 'Frederic Jasmin',
-	description: 'The official Astro Resume Theme',
+	description: 'Frederic Jasmin Portfolio',
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	date: {
